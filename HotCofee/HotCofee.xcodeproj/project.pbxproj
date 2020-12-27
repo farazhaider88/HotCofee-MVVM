@@ -14,6 +14,10 @@
 		D0700A3C25974967000BDDF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0700A3A25974967000BDDF8 /* LaunchScreen.storyboard */; };
 		D0700A4725974CE5000BDDF8 /* OrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0700A4625974CE5000BDDF8 /* OrdersTableViewController.swift */; };
 		D0700A4A25974D0F000BDDF8 /* AddOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0700A4925974D0F000BDDF8 /* AddOrderViewController.swift */; };
+		D0700A4F259758F7000BDDF8 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0700A4E259758F7000BDDF8 /* Webservice.swift */; };
+		D0700A9525985C96000BDDF8 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0700A9425985C96000BDDF8 /* Order.swift */; };
+		D0700A99259861EC000BDDF8 /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0700A98259861EC000BDDF8 /* OrderViewModel.swift */; };
+		D0700B5E2598A0F0000BDDF8 /* AddCoffeeOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0700B5D2598A0F0000BDDF8 /* AddCoffeeOrderViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		D0700A3D25974967000BDDF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0700A4625974CE5000BDDF8 /* OrdersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewController.swift; sourceTree = "<group>"; };
 		D0700A4925974D0F000BDDF8 /* AddOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderViewController.swift; sourceTree = "<group>"; };
+		D0700A4E259758F7000BDDF8 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		D0700A9425985C96000BDDF8 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		D0700A98259861EC000BDDF8 /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
+		D0700B5D2598A0F0000BDDF8 /* AddCoffeeOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoffeeOrderViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,9 @@
 		D0700A2E25974964000BDDF8 /* HotCofee */ = {
 			isa = PBXGroup;
 			children = (
+				D0700A97259861DD000BDDF8 /* ViewModel */,
+				D0700A9325985C71000BDDF8 /* Models */,
+				D0700A4D259758E1000BDDF8 /* Service */,
 				D0700A4425974C37000BDDF8 /* Controller */,
 				D0700A2F25974964000BDDF8 /* AppDelegate.swift */,
 				D0700A3125974964000BDDF8 /* SceneDelegate.swift */,
@@ -76,6 +87,31 @@
 				D0700A4925974D0F000BDDF8 /* AddOrderViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		D0700A4D259758E1000BDDF8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D0700A4E259758F7000BDDF8 /* Webservice.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D0700A9325985C71000BDDF8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D0700A9425985C96000BDDF8 /* Order.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D0700A97259861DD000BDDF8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D0700A98259861EC000BDDF8 /* OrderViewModel.swift */,
+				D0700B5D2598A0F0000BDDF8 /* AddCoffeeOrderViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,9 +184,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0700A9525985C96000BDDF8 /* Order.swift in Sources */,
+				D0700B5E2598A0F0000BDDF8 /* AddCoffeeOrderViewModel.swift in Sources */,
 				D0700A4725974CE5000BDDF8 /* OrdersTableViewController.swift in Sources */,
 				D0700A4A25974D0F000BDDF8 /* AddOrderViewController.swift in Sources */,
 				D0700A3025974964000BDDF8 /* AppDelegate.swift in Sources */,
+				D0700A4F259758F7000BDDF8 /* Webservice.swift in Sources */,
+				D0700A99259861EC000BDDF8 /* OrderViewModel.swift in Sources */,
 				D0700A3225974964000BDDF8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
